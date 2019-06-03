@@ -1,36 +1,36 @@
 [color]
-	ui = true
+    ui = true
 [user]
-	name = 
-	email = 
+    name = 
+    email = 
 [alias]
-	st = status
-	log1 = log --pretty=oneline --abbrev-commit
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-	dt = difftool
-	in = log master..origin/master --abbrev-commit
-	o   = log origin/master..master --abbrev-commit
-	out = log origin/master..master --abbrev-commit --name-status
+    st = status
+    log1 = log --pretty=oneline --abbrev-commit
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+    dt = difftool
+    in = log master..origin/master --abbrev-commit
+    o   = log origin/master..master --abbrev-commit
+    out = log origin/master..master --abbrev-commit --name-status
     ograph = log origin/master..master --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-	co = checkout
-	ca = commit -a
-	cf = commit -F ~/commit
-	caf = commit -a -F ~/commit
+    co = checkout
+    ca = commit -a
+    cf = commit -F ~/commit
+    caf = commit -a -F ~/commit
 
 [color "diff"]
-	new = green bold
-	old = red bold
-	meta = yellow
+    new = green bold
+    old = red bold
+    meta = yellow
 
 [web]
-	browser = google-chrome
+    browser = google-chrome
 [color "status"]
-	changed = blue reverse
-	added = green
-	untracked = red bold
-	nobranch = yellow
+    changed = blue reverse
+    added = green
+    untracked = red bold
+    nobranch = yellow
 [diff]
-	tool = meld
+    tool = meld
     renames = copies
 [difftool]
-	prompt =  false
+    prompt =  false
