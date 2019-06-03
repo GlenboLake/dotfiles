@@ -8,10 +8,10 @@
     log1 = log --pretty=oneline --abbrev-commit
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
     dt = difftool
-    in = log master..origin/master --abbrev-commit
-    o   = log origin/master..master --abbrev-commit
-    out = log origin/master..master --abbrev-commit --name-status
-    ograph = log origin/master..master --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+    in = log ..@{u} --abbrev-commit
+    igraph = ..log @{u} --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+    out   = log @{u}.. --abbrev-commit
+    ograph = log @{u}.. --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
     co = checkout
     ca = commit -a
 
