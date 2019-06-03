@@ -14,16 +14,11 @@
     ograph = log origin/master..master --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
     co = checkout
     ca = commit -a
-    cf = commit -F ~/commit
-    caf = commit -a -F ~/commit
 
 [color "diff"]
     new = green bold
     old = red bold
     meta = yellow
-
-[web]
-    browser = google-chrome
 [color "status"]
     changed = blue reverse
     added = green
